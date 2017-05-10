@@ -1,5 +1,7 @@
 # Vue-learning
 
+[Vue API documents](https://cn.vuejs.org/v2/api/#Vue-nextTick)
+
 ## 基础元素
 
 * data
@@ -22,7 +24,7 @@
 
 * watch
   
-  类型 ` [key: string] : string | function | object `
+  类型 ` [key: string] : string | function | object `
   
   示例
   
