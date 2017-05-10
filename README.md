@@ -22,8 +22,10 @@
 
 * watch
   
-  类型 ` [key: string] : string | function | object`
+  类型 ` [key: string] : string | function | object `
+  
   示例
+  
   ```
   var vm = new Vue({
     data: {
@@ -44,5 +46,5 @@
       }
     }
   })
-  vm.a = 2 // -> new: 2, old: 1
+  vm.a = 2 // -> new: 2, old: 1
   ```
