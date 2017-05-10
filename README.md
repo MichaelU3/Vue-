@@ -18,5 +18,31 @@
 * methods
 
   可定义于组件和实例中，最终被混入到实例中
+  可通过VM 实例访问这些方法
+
+* watch
   
-  
+  类型 ` [key: string] : string | function | object`
+  示例
+  ```
+  var vm = new Vue({
+    data: {
+      a: 1,
+      b: 2,
+      c: 3
+    },
+    watch: {
+      a: function (val, oldVal) {
+        console.log('new: %s, old: %s', val, oldVal)
+      },
+      // 方法名
+      b: 'someMethod',
+      // 深度 watcher
+      c: {
+        handler: function (val, oldVal) { /* ... */ },
+        deep: true
+      }
+    }
+  })
+  vm.a = 2 // -> new: 2, old: 1
+  ```
